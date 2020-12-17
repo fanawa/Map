@@ -3,8 +3,10 @@
     <string name="title_activity_maps">Map</string>
 
     <string name="title">OpenAir</string>
+
     <string name="w.b">White Beach</string>
-    <string name="w.b.text">勝連半島の先端にある白浜が美しい海岸。</string>
-    <string name="w.b.value">景観 : 良\n衛生 : 綺麗\n混雑度 : ガラガラ</string>-->
+    <string name="w.b.text">勝連半島の先端にある白浜が美しい海岸\n居心地が良く、人がほとんどいない穴場</string>
+    <string name="hamahiga">浜比嘉島</string>
+    <string name="hamahiga.text">うるま市に属する島で、貝塚時代からグスク時代にかけての遺跡が多く発見されている</string>
 
 </resources>
