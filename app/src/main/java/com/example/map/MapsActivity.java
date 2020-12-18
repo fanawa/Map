@@ -20,15 +20,18 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     //public static final String API_KEY_map = "AIzaSyCAYumamZGODLCMJH1lVtEIai6qSkGGi_Y";
 
-    public static final String API_KEY = "AIzaSyAnf4fUNdT8ANFpCZ4LfnS_AWqAlHnidJ8";  //APIキー6
+    public static final String API_KEY = "AIzaSyDfpLhAh6x7VwCWOzmPVYRsLjiM4ZYJE1c";  //APIキー9
     public static final String API_KEY2 = "AIzaSyBttLfs4-WNNgqOBSMMKeY9NN7jPmvUJto";  //APIキー7
     public static final String API_KEY3 = "";
     public static final String API_KEY4 = "";
+
     public static final String VIDEO_ID = "CQ6dbUmU__o";
-    public static final String VIDEO_ID1 ="AsKf_wNiqsc&t=26s";    //video1
-    public static final String VIDEO_ID2 = "bMirF_WKEQA";         //video2
-    public static final String VIDEO_ID3 = "zZECV1OYzL0";         //video3
-    public static final String VIDEO_ID4 = "UWC8kDkv3Hg";         //video4
+    public static final String VIDEO_ID1 ="AsKf_wNiqsc&t=26s";    //white beach
+    public static final String VIDEO_ID2 = "I4BojnT4Zqo";         //浜比嘉島
+    public static final String VIDEO_ID3 = "8EZdi914dsU";         //薮地島
+    public static final String VIDEO_ID4 = "XN_Gxf0d1oY";         //ウクの浜
+    public static final String VIDEO_ID5 = "LOxURLadloE";         //アクナ浜
+
 
     private GoogleMap mMap;
 
@@ -36,9 +39,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
+
+
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.map);
+                .findFragmentById(R.id.map1);
         mapFragment.getMapAsync(this);
 
 
@@ -56,7 +61,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                         YouTubePlayer.FULLSCREEN_FLAG_ALWAYS_FULLSCREEN_IN_LANDSCAPE);
 
                                 if (!wasRestored) {
-                                    youTubePlayer.cueVideo(VIDEO_ID1);
+                                    youTubePlayer.cueVideo(VIDEO_ID2);
 
                                     Log.i("log", "onInitializationSuccess");
                                 }
