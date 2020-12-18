@@ -34,14 +34,6 @@
 
 
             <!--hamahiga-->
-            <fragment
-                android:id="@+id/fragment1"
-                android:name="com.google.android.youtube.player.YouTubePlayerFragment"
-                android:layout_width="match_parent"
-                android:layout_height="208dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="350dp"
-                android:layout_marginRight="20dp" />
 
             <TextView
                 android:id="@+id/textView"
@@ -50,12 +42,13 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:background="#800A0A0A"
-                android:paddingLeft="20dp"
+                android:paddingLeft="24dp"
                 android:paddingRight="20dp"
+                android:layout_marginTop="350dp"
                 android:text="@string/hamahiga"
                 android:textAlignment="center"
                 android:textColor="#F5F3F2"
-                android:textSize="30sp"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -72,6 +65,15 @@
                 android:textStyle="bold" />
 
             <fragment
+                android:id="@+id/fragment1"
+                android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+                android:layout_width="match_parent"
+                android:layout_height="208dp"
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginRight="20dp" />
+
+            <fragment
                 android:id="@+id/map1"
                 android:name="com.google.android.gms.maps.SupportMapFragment"
                 android:layout_width="match_parent"
@@ -82,14 +84,6 @@
                 tools:context=".MapsActivity" />
 
             <!--  -->
-            <fragment
-                android:id="@+id/fragment2"
-                android:name="com.google.android.youtube.player.YouTubePlayerFragment"
-                android:layout_width="match_parent"
-                android:layout_height="208dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="100dp"
-                android:layout_marginRight="20dp" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -100,7 +94,7 @@
                 android:background="#800A0A0A"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
-                android:text="@string/w.b"
+                android:text="@string/yabuchi"
                 android:textAlignment="center"
                 android:textColor="#F5F3F2"
                 android:textSize="30sp"
@@ -114,10 +108,19 @@
                 android:layout_marginRight="20dp"
                 android:background="#800A0A0A"
                 android:paddingLeft="20dp"
-                android:text="@string/w.b.text"
+                android:text="@string/yabuchi.text"
                 android:textColor="#F7F6F6"
                 android:textSize="18sp"
                 android:textStyle="bold" />
+
+            <fragment
+                android:id="@+id/fragment2"
+                android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+                android:layout_width="match_parent"
+                android:layout_height="208dp"
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginRight="20dp" />
 
             <fragment
                 android:id="@+id/map2"
@@ -131,15 +134,6 @@
 
             <!--  -->
 
-            <fragment
-                android:id="@+id/fragment3"
-                android:name="com.google.android.youtube.player.YouTubePlayerFragment"
-                android:layout_width="match_parent"
-                android:layout_height="208dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="100dp"
-                android:layout_marginRight="20dp" />
-
             <TextView
                 android:id="@+id/textView5"
                 android:layout_width="match_parent"
@@ -149,7 +143,7 @@
                 android:background="#800A0A0A"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
-                android:text="@string/w.b"
+                android:text="@string/uku"
                 android:textAlignment="center"
                 android:textColor="#F5F3F2"
                 android:textSize="30sp"
@@ -163,10 +157,19 @@
                 android:layout_marginRight="20dp"
                 android:background="#800A0A0A"
                 android:paddingLeft="20dp"
-                android:text="@string/w.b.text"
+                android:text="@string/uku.text"
                 android:textColor="#F7F6F6"
                 android:textSize="18sp"
                 android:textStyle="bold" />
+
+            <fragment
+                android:id="@+id/fragment3"
+                android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+                android:layout_width="match_parent"
+                android:layout_height="208dp"
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginRight="20dp" />
 
             <fragment
                 android:id="@+id/map3"
@@ -180,15 +183,6 @@
 
             <!--  -->
 
-            <fragment
-                android:id="@+id/fragment4"
-                android:name="com.google.android.youtube.player.YouTubePlayerFragment"
-                android:layout_width="match_parent"
-                android:layout_height="208dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="100dp"
-                android:layout_marginRight="20dp" />
-
             <TextView
                 android:id="@+id/textView7"
                 android:layout_width="match_parent"
@@ -198,7 +192,7 @@
                 android:background="#800A0A0A"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
-                android:text="@string/w.b"
+                android:text="@string/akuna"
                 android:textAlignment="center"
                 android:textColor="#F5F3F2"
                 android:textSize="30sp"
@@ -212,10 +206,19 @@
                 android:layout_marginRight="20dp"
                 android:background="#800A0A0A"
                 android:paddingLeft="20dp"
-                android:text="@string/w.b.text"
+                android:text="@string/akuna.text"
                 android:textColor="#F7F6F6"
                 android:textSize="18sp"
                 android:textStyle="bold" />
+
+            <fragment
+                android:id="@+id/fragment4"
+                android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+                android:layout_width="match_parent"
+                android:layout_height="208dp"
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginRight="20dp" />
 
             <fragment
                 android:id="@+id/map4"
@@ -228,14 +231,6 @@
                 tools:context=".MapsActivity" />
 
             <!--  -->
-            <fragment
-                android:id="@+id/fragment5"
-                android:name="com.google.android.youtube.player.YouTubePlayerFragment"
-                android:layout_width="match_parent"
-                android:layout_height="208dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="100dp"
-                android:layout_marginRight="20dp" />
 
             <TextView
                 android:id="@+id/textView9"
@@ -246,6 +241,7 @@
                 android:background="#800A0A0A"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
+                android:layout_marginTop="100dp"
                 android:text="@string/w.b"
                 android:textAlignment="center"
                 android:textColor="#F5F3F2"
@@ -264,6 +260,15 @@
                 android:textColor="#F7F6F6"
                 android:textSize="18sp"
                 android:textStyle="bold" />
+
+            <fragment
+                android:id="@+id/fragment5"
+                android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+                android:layout_width="match_parent"
+                android:layout_height="208dp"
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginRight="20dp" />
 
             <fragment
                 android:id="@+id/map5"

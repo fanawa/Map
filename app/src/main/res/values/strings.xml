@@ -8,5 +8,13 @@
     <string name="w.b.text">勝連半島の先端にある白浜が美しい海岸\n居心地が良く、人がほとんどいない穴場</string>
     <string name="hamahiga">浜比嘉島</string>
     <string name="hamahiga.text">うるま市に属する島で、貝塚時代からグスク時代にかけての遺跡が多く発見されている</string>
+    <string name="yabuchi">藪地島</string>
+    <string name="yabuchi.text">勝連半島の東側にあり、沖縄本島とは藪地大橋で結ばれている\n沖縄県最古の土器が発見されたヤブチ洞窟遺跡があり、地元住民から祖先発祥の地として信仰を集めている</string>
+    <string name="uku">ウクの浜</string>
+    <string name="uku.text">宮城島にある岩山に囲まれた美しいビーチ</string>
+    <string name="akuna">アクナ浜</string>
+    <string name="akuna.text">ウクの浜の隣にあるビーチ\n海外からのゴミが漂着してくる</string>
+
+
 
 </resources>
