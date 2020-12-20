@@ -33,7 +33,7 @@
             android:orientation="vertical">
 
 
-            <!--hamahiga-->
+            <!--1 hamahiga-->
 
             <TextView
                 android:id="@+id/textView"
@@ -48,7 +48,7 @@
                 android:text="@string/hamahiga"
                 android:textAlignment="center"
                 android:textColor="#F5F3F2"
-                android:textSize="24sp"
+                android:textSize="30sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -83,7 +83,9 @@
                 android:layout_marginBottom="70dp"
                 tools:context=".MapsActivity" />
 
-            <!--yabuchi  -->
+
+            <!--2 yabuchi  -->
+
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
@@ -131,7 +133,9 @@
                 android:layout_marginBottom="70dp"
                 tools:context=".MapsActivity" />
 
-            <!-- uku-->
+
+            <!--3 uku-->
+
             <TextView
                 android:id="@+id/textView5"
                 android:layout_width="match_parent"
@@ -179,7 +183,8 @@
                 android:layout_marginBottom="70dp"
                 tools:context=".MapsActivity" />
 
-            <!--  akuna-->
+
+            <!--4  akuna-->
 
             <TextView
                 android:id="@+id/textView7"
@@ -228,7 +233,8 @@
                 android:layout_marginBottom="70dp"
                 tools:context=".MapsActivity" />
 
-            <!-- white beach -->
+
+            <!--5 white beach -->
 
             <TextView
                 android:id="@+id/textView9"

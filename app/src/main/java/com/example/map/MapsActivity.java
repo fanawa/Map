@@ -162,6 +162,7 @@ public class MapsActivity extends FragmentActivity {
 
         //map2
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
+        //26.322269,127.917837
         SupportMapFragment mapFragment2 = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map2);
         mapFragment2.getMapAsync(new OnMapReadyCallback() {
@@ -169,7 +170,7 @@ public class MapsActivity extends FragmentActivity {
             public void onMapReady(GoogleMap googleMap2) {
                 mMap2 = googleMap2;
 
-                // Add a marker in hamahiga and move the camera
+                // Add a marker in yabuchi and move the camera
                 LatLng yabuchi = new LatLng(26.322269, 127.917837);
                 mMap2.addMarker(new MarkerOptions().position(yabuchi).title("Marker in yabuchi"));
                 mMap2.moveCamera(CameraUpdateFactory.newLatLng(yabuchi));
@@ -227,7 +228,7 @@ public class MapsActivity extends FragmentActivity {
         //26.367494617568482, 127.99358563080219
         SupportMapFragment mapFragment3 = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map3);
-        mapFragment.getMapAsync(new OnMapReadyCallback() {
+        mapFragment2.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(GoogleMap googleMap3) {
                 mMap3 = googleMap3;
@@ -240,6 +241,7 @@ public class MapsActivity extends FragmentActivity {
                 //ズーム機能
                 UiSettings us = mMap3.getUiSettings();
                 us.setZoomControlsEnabled(true);
+
             }
         });
         Log.i("log","Main_onCreate_map3");
