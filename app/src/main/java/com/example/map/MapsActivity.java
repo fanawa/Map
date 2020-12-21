@@ -2,8 +2,11 @@ package com.example.map;
 
 import androidx.fragment.app.FragmentActivity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -56,7 +59,7 @@ public class MapsActivity extends FragmentActivity {
         setContentView(R.layout.activity_maps);
 
 
-        Log.i("log","Main_onCreate");
+        Log.i("log", "Main_onCreate");
 /**
  * 1
  */
@@ -93,9 +96,11 @@ public class MapsActivity extends FragmentActivity {
                             }
                         }
                 );
-        Log.i("log","Main_onCreate_video1");
+        Log.i("log", "Main_onCreate_video1");
         //video1 ここまで
 
+
+        /**
         //map1
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
@@ -116,10 +121,10 @@ public class MapsActivity extends FragmentActivity {
 
             }
         });
-        Log.i("log","Main_onCreate_map1");
+        Log.i("log", "Main_onCreate_map1");
         //map1ここまで
 
-
+         **/
 
 /**
  * 2
@@ -157,9 +162,11 @@ public class MapsActivity extends FragmentActivity {
                             }
                         }
                 );
-        Log.i("log","Main_onCreate_video2");
+        Log.i("log", "Main_onCreate_video2");
         //video2 ここまで
 
+
+        /**
         //map2
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         //26.322269,127.917837
@@ -181,8 +188,10 @@ public class MapsActivity extends FragmentActivity {
 
             }
         });
-        Log.i("log","Main_onCreate_map2");
+        Log.i("log", "Main_onCreate_map2");
         //map2ここまで
+        */
+
 
         /**
          * 3
@@ -220,15 +229,17 @@ public class MapsActivity extends FragmentActivity {
                             }
                         }
                 );
-        Log.i("log","Main_onCreate_video3");
+        Log.i("log", "Main_onCreate_video3");
         //video3 ここまで
 
+
+        /**
         //map3
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         //26.367494617568482, 127.99358563080219
         SupportMapFragment mapFragment3 = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map3);
-        mapFragment2.getMapAsync(new OnMapReadyCallback() {
+        mapFragment3.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(GoogleMap googleMap3) {
                 mMap3 = googleMap3;
@@ -244,9 +255,9 @@ public class MapsActivity extends FragmentActivity {
 
             }
         });
-        Log.i("log","Main_onCreate_map3");
+        Log.i("log", "Main_onCreate_map3");
         //map3ここまで
-
+        */
 
         /**
          * 4
@@ -284,15 +295,16 @@ public class MapsActivity extends FragmentActivity {
                             }
                         }
                 );
-        Log.i("log","Main_onCreate_video4");
+        Log.i("log", "Main_onCreate_video4");
         //video4 ここまで
 
+        /**
         //map4
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         //26.36386645542974, 127.994072544131
         SupportMapFragment mapFragment4 = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map4);
-        mapFragment.getMapAsync(new OnMapReadyCallback() {
+        mapFragment4.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(GoogleMap googleMap4) {
                 mMap4 = googleMap4;
@@ -307,8 +319,9 @@ public class MapsActivity extends FragmentActivity {
                 us.setZoomControlsEnabled(true);
             }
         });
-        Log.i("log","Main_onCreate_map4");
+        Log.i("log", "Main_onCreate_map4");
         //map4ここまで
+         */
 
 
         /**
@@ -347,15 +360,16 @@ public class MapsActivity extends FragmentActivity {
                             }
                         }
                 );
-        Log.i("log","Main_onCreate_video5");
+        Log.i("log", "Main_onCreate_video5");
         //video5 ここまで
 
+        /**
         //map5
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         //26.311742704026422, 127.89030250840678
         SupportMapFragment mapFragment5 = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map5);
-        mapFragment.getMapAsync(new OnMapReadyCallback() {
+        mapFragment5.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(GoogleMap googleMap5) {
                 mMap5 = googleMap5;
@@ -370,8 +384,75 @@ public class MapsActivity extends FragmentActivity {
                 us.setZoomControlsEnabled(true);
             }
         });
-        Log.i("log","Main_onCreate_map5");
+        Log.i("log", "Main_onCreate_map5");
         //map5ここまで
+         */
 
     }
+
+
+
+    /**
+     * GoogleMapへのリンク
+     */
+        //1 hamahiga
+    public void button1_onClick(View view) {
+        // 26.31283,127.96045
+        Uri uri = Uri.parse("geo:26.31283,127.96045?q=ムルク浜ビーチ");
+
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
+    }
+
+    //2 yabuchi
+    public void button2_onClick(View view) {
+        //26.322322676885126,127.91785436424348
+        Uri uri = Uri.parse("geo:26.322269,127.917837?q=藪地島");
+
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
+    }
+
+    //3 uku
+    public void button3_onClick(View view) {
+    //26.367494617568482, 127.99358563080219
+        Uri uri = Uri.parse("geo:26.367494617568482,127.99358563080219?q=ウクの浜");
+
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
+    }
+
+    //4 アクナ浜
+    public void button4_onClick(View view) {
+    //26.36386645542974, 127.994072544131
+        Uri uri = Uri.parse("geo:26.36386645542974,127.994072544131?q=アクナ浜");
+
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
+    }
+
+    //5 white beach
+    public void button5_onClick(View view) {
+    //26.311742704026422, 127.89030250840678
+        Uri uri = Uri.parse("geo:26.311742704026422,127.89030250840678?q=ホワイトビーチ");
+
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
+    }
+
 }

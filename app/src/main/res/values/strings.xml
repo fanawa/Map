@@ -14,7 +14,10 @@
     <string name="uku.text">宮城島にある岩山に囲まれた美しいビーチ</string>
     <string name="akuna">アクナ浜</string>
     <string name="akuna.text">ウクの浜の隣にあるビーチ\n海外からのゴミが漂着してくる</string>
-
-
+    <string name="hamahiga_address">〒904-2316 沖縄県うるま市勝連比嘉２０２</string>
+    <string name="yabuchi_address">〒904-2304 沖縄県うるま市与那城屋慶名</string>
+    <string name="uku_address">〒904-2423 沖縄県うるま市与那城宮城</string>
+    <string name="akuna_address">〒904-2423 沖縄県うるま市与那城宮城</string>
+    <string name="w_b_address">〒904-2312 沖縄県うるま市勝連平安名</string>
 
 </resources>
