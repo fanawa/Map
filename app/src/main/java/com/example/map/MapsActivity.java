@@ -1,5 +1,6 @@
 package com.example.map;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentActivity;
 
 import android.content.Intent;
@@ -22,7 +23,7 @@ import com.google.android.youtube.player.YouTubePlayerFragment;
 
 //public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 public class MapsActivity extends FragmentActivity {
-
+//public class MapsActivity extends AppCompatActivity {
 
     //public static final String API_KEY_map = "AIzaSyCAYumamZGODLCMJH1lVtEIai6qSkGGi_Y";
 
@@ -31,14 +32,16 @@ public class MapsActivity extends FragmentActivity {
     public static final String API_KEY3 = "AIzaSyBYI70DxljUAm6rBcV8p_I3zmBjg4Sbibs";    //APIキー11 video3
     public static final String API_KEY4 = "AIzaSyDIh0Ohakgcv2wuCm0isarw06tVLkk4sjo";    //APIキー12 video4
     public static final String API_KEY5 = "AIzaSyAmfg3dDX1v1bRaDatw-yjqXNyd_C06d-A";    //APIキー13 video5
+    public static final String API_KEY6 = "AIzaSyC3bQAkpNdJ_8Oay48wHDHu0d_jJV2XkoU";
 
     public static final String VIDEO_ID = "CQ6dbUmU__o";
 
     public static final String VIDEO_ID1 = "I4BojnT4Zqo";         //浜比嘉島
     public static final String VIDEO_ID2 = "8EZdi914dsU";         //薮地島
     public static final String VIDEO_ID3 = "XN_Gxf0d1oY";         //ウクの浜
-    public static final String VIDEO_ID4 = "LOxURLadloE&t=1s";         //アクナ浜
-    public static final String VIDEO_ID5 = "AsKf_wNiqsc&t=26s";    //white beach
+    public static final String VIDEO_ID4 = "LOxURLadloE&t=2s";      //アクナ浜
+    public static final String VIDEO_ID5 = "AsKf_wNiqsc&t=27s";    //white beach
+    public static final String VIDEO_ID6 = "2ML7_q2Pksw&t=605s";   //white beach
 
 
     private GoogleMap mMap1;
@@ -333,7 +336,7 @@ public class MapsActivity extends FragmentActivity {
 
         youTubePlayerFragment5.initialize
                 (
-                        API_KEY5,
+                        API_KEY6,
                         new YouTubePlayer.OnInitializedListener() {
                             @Override
                             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean wasRestored) {
@@ -410,7 +413,7 @@ public class MapsActivity extends FragmentActivity {
     //2 yabuchi
     public void button2_onClick(View view) {
         //26.322322676885126,127.91785436424348
-        Uri uri = Uri.parse("geo:26.322269,127.917837?q=藪地島");
+        Uri uri = Uri.parse("geo:26.322269,127.917837?q=ヘーガニク");
 
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
