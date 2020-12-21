@@ -2,7 +2,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:background="@drawable/tent"
     tools:context=".MapsActivity">
 
@@ -25,7 +25,7 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="0dp"
+        android:layout_width="417dp"
         android:layout_height="729dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -38,13 +38,62 @@
             android:orientation="vertical">
 
 
-            <!--1 hamahiga-->
-
-
-            <!--2 yabuchi  -->
+            <!--1 hamahiga1-->
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#400A0A0A"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/hamahiga1"
+                    android:textAlignment="center"
+                    android:textColor="#F5F3F2"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#400A0A0A"
+                    android:paddingLeft="20dp"
+                    android:text="@string/hamahiga1.text"
+                    android:textColor="#F7F6F6"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <fragment
+                    android:id="@+id/fragment6"
+                    android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="208dp"
+
+                    />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"
+                    android:onClick="button6_onClick"
+                    android:text="@string/hamahiga1_address"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    app:iconTint="#E43131"
+                    app:rippleColor="#00FFFFFF" />
+            </LinearLayout>
+
+            <!--2 hamahiga2-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
@@ -57,7 +106,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="350dp"
                     android:background="#406B4242"
-                    android:text="@string/hamahiga"
+                    android:text="@string/hamahiga2"
                     android:textAlignment="center"
                     android:textColor="#F5F3F2"
                     android:textSize="30sp"
@@ -68,7 +117,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#400A0A0A"
-                    android:text="@string/hamahiga.text"
+                    android:text="@string/hamahiga2.text"
                     android:textColor="#F7F6F6"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -78,7 +127,7 @@
                     android:id="@+id/fragment1"
                     android:name="com.google.android.youtube.player.YouTubePlayerFragment"
                     android:layout_width="match_parent"
-                    android:layout_height="300dp"
+                    android:layout_height="208dp"
 
                     />
 
@@ -89,7 +138,7 @@
                     android:background="@color/black"
                     android:backgroundTint="@color/black"
                     android:onClick="button1_onClick"
-                    android:text="@string/yabuchi_address"
+                    android:text="@string/hamahiga2_address"
                     android:textColor="@color/white"
                     android:textSize="15sp" />
 
@@ -105,6 +154,8 @@
 
             </LinearLayout>
 
+            <!--3 yabuchi  -->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -113,6 +164,7 @@
                 android:layout_marginBottom="30dp"
                 android:backgroundTint="#FFFFFF"
                 android:orientation="vertical">
+
 
                 <TextView
                     android:id="@+id/textView3"
@@ -168,7 +220,7 @@
             <!--                tools:context=".MapsActivity" />-->
 
 
-            <!--3 uku-->
+            <!--4 uku-->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -231,7 +283,7 @@
             <!--                tools:context=".MapsActivity" />-->
 
 
-            <!--4  akuna-->
+            <!--5  akuna-->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -298,7 +350,7 @@
             <!--                tools:context=".MapsActivity" />-->
 
 
-            <!--5 white beach -->
+            <!--6 white beach -->
 
             <LinearLayout
                 android:layout_width="match_parent"

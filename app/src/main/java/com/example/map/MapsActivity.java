@@ -32,17 +32,17 @@ public class MapsActivity extends FragmentActivity {
     public static final String API_KEY3 = "AIzaSyBYI70DxljUAm6rBcV8p_I3zmBjg4Sbibs";    //APIキー11 video3
     public static final String API_KEY4 = "AIzaSyDIh0Ohakgcv2wuCm0isarw06tVLkk4sjo";    //APIキー12 video4
     public static final String API_KEY5 = "AIzaSyAmfg3dDX1v1bRaDatw-yjqXNyd_C06d-A";    //APIキー13 video5
-    public static final String API_KEY6 = "AIzaSyC3bQAkpNdJ_8Oay48wHDHu0d_jJV2XkoU";
+    public static final String API_KEY6 = "AIzaSyC3bQAkpNdJ_8Oay48wHDHu0d_jJV2XkoU";    //APIキー15 video6
 
     public static final String VIDEO_ID = "CQ6dbUmU__o";
 
-    public static final String VIDEO_ID1 = "I4BojnT4Zqo";         //浜比嘉島
+    public static final String VIDEO_ID1 = "I4BojnT4Zqo";         //浜比嘉島2
     public static final String VIDEO_ID2 = "8EZdi914dsU";         //薮地島
     public static final String VIDEO_ID3 = "XN_Gxf0d1oY";         //ウクの浜
-    public static final String VIDEO_ID4 = "LOxURLadloE&t=2s";      //アクナ浜
-    public static final String VIDEO_ID5 = "AsKf_wNiqsc&t=27s";    //white beach
+    public static final String VIDEO_ID4 = "LOxURLadloE";      //アクナ浜
+    public static final String VIDEO_ID5 = "AsKf_wNiqsc";    //white beach
     public static final String VIDEO_ID6 = "2ML7_q2Pksw&t=605s";   //white beach
-
+    public static final String VIDEO_ID7 = "ZDKXsjWmZ4A";    //浜比嘉島1
 
     private GoogleMap mMap1;
     private GoogleMap mMap2;
@@ -63,10 +63,50 @@ public class MapsActivity extends FragmentActivity {
 
 
         Log.i("log", "Main_onCreate");
-/**
- * 1
- */
+
+        /**
+         * 1
+         */
         //video1
+        YouTubePlayerFragment youTubePlayerFragment6 = (YouTubePlayerFragment) getFragmentManager()
+                .findFragmentById(R.id.fragment6);
+
+        youTubePlayerFragment6.initialize
+                (
+                        API_KEY6,
+                        new YouTubePlayer.OnInitializedListener() {
+                            @Override
+                            public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean wasRestored) {
+                                youTubePlayer.setFullscreenControlFlags(YouTubePlayer.FULLSCREEN_FLAG_CONTROL_ORIENTATION |
+                                        YouTubePlayer.FULLSCREEN_FLAG_ALWAYS_FULLSCREEN_IN_LANDSCAPE);
+
+                                if (!wasRestored) {
+                                    youTubePlayer.cueVideo(VIDEO_ID7);
+
+                                    Log.i("log", "onInitializationSuccess");
+                                }
+                            }
+
+                            @Override
+                            public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult error) {
+                                final int REQUEST_CODE = 1;
+
+                                if (error.isUserRecoverableError()) {
+                                    error.getErrorDialog(MapsActivity.this, REQUEST_CODE).show();
+                                } else {
+                                    String errorMessage = String.format("There was an error initializing the YoutubePlayer (%1$s)", error.toString());
+                                    Toast.makeText(MapsActivity.this, errorMessage, Toast.LENGTH_LONG).show();
+                                }
+                            }
+                        }
+                );
+        Log.i("log", "Main_onCreate_video1");
+        //video1 ここまで
+
+/**
+ * 2
+ */
+        //video2
         YouTubePlayerFragment youTubePlayerFragment = (YouTubePlayerFragment) getFragmentManager()
                 .findFragmentById(R.id.fragment1);
 
@@ -100,7 +140,7 @@ public class MapsActivity extends FragmentActivity {
                         }
                 );
         Log.i("log", "Main_onCreate_video1");
-        //video1 ここまで
+        //video2 ここまで
 
 
         /**
@@ -130,9 +170,9 @@ public class MapsActivity extends FragmentActivity {
          **/
 
 /**
- * 2
+ * 3
  */
-        //video2
+        //video3
         YouTubePlayerFragment youTubePlayerFragment2 = (YouTubePlayerFragment) getFragmentManager()
                 .findFragmentById(R.id.fragment2);
 
@@ -166,7 +206,7 @@ public class MapsActivity extends FragmentActivity {
                         }
                 );
         Log.i("log", "Main_onCreate_video2");
-        //video2 ここまで
+        //video3 ここまで
 
 
         /**
@@ -197,9 +237,9 @@ public class MapsActivity extends FragmentActivity {
 
 
         /**
-         * 3
+         * 4
          */
-        //video3
+        //video4
         YouTubePlayerFragment youTubePlayerFragment3 = (YouTubePlayerFragment) getFragmentManager()
                 .findFragmentById(R.id.fragment3);
 
@@ -233,7 +273,7 @@ public class MapsActivity extends FragmentActivity {
                         }
                 );
         Log.i("log", "Main_onCreate_video3");
-        //video3 ここまで
+        //video4 ここまで
 
 
         /**
@@ -263,9 +303,9 @@ public class MapsActivity extends FragmentActivity {
         */
 
         /**
-         * 4
+         * 5
          */
-        //video4
+        //video5
         YouTubePlayerFragment youTubePlayerFragment4 = (YouTubePlayerFragment) getFragmentManager()
                 .findFragmentById(R.id.fragment4);
 
@@ -299,7 +339,7 @@ public class MapsActivity extends FragmentActivity {
                         }
                 );
         Log.i("log", "Main_onCreate_video4");
-        //video4 ここまで
+        //video5 ここまで
 
         /**
         //map4
@@ -328,15 +368,15 @@ public class MapsActivity extends FragmentActivity {
 
 
         /**
-         * 5
+         * 6
          */
-        //video5
+        //video6
         YouTubePlayerFragment youTubePlayerFragment5 = (YouTubePlayerFragment) getFragmentManager()
                 .findFragmentById(R.id.fragment5);
 
         youTubePlayerFragment5.initialize
                 (
-                        API_KEY6,
+                        API_KEY5,
                         new YouTubePlayer.OnInitializedListener() {
                             @Override
                             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean wasRestored) {
@@ -364,7 +404,7 @@ public class MapsActivity extends FragmentActivity {
                         }
                 );
         Log.i("log", "Main_onCreate_video5");
-        //video5 ここまで
+        //video6 ここまで
 
         /**
         //map5
@@ -398,10 +438,22 @@ public class MapsActivity extends FragmentActivity {
     /**
      * GoogleMapへのリンク
      */
-        //1 hamahiga
+    //1 hamahiga1
+    public void button6_onClick(View view) {
+        //26.32526839148512, 127.95127022462071
+        Uri uri = Uri.parse("geo:26.32526839148512,127.95127022462071?q=浜比嘉ビーチ");
+
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
+    }
+
+    //1 hamahiga2
     public void button1_onClick(View view) {
         // 26.31283,127.96045
-        Uri uri = Uri.parse("geo:26.31283,127.96045?q=ムルク浜ビーチ");
+        Uri uri = Uri.parse("geo:26.31283,127.96045?q=シルミチューの");
 
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
