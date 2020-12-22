@@ -363,7 +363,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginBottom="100dp"
+                android:layout_marginBottom="90dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -415,7 +415,7 @@
             <TextView
                 android:id="@+id/textView15"
                 android:layout_width="match_parent"
-                android:layout_height="145dp"
+                android:layout_height="85dp"
                 android:text="@string/footer"
                 android:textAlignment="center"
                 android:textColor="#FF9800"

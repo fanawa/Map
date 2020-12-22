@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/tent"
+    android:background="@drawable/araha3"
     tools:context=".MapsActivity">
 
     <TextView
@@ -46,7 +46,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="350dp"
+                android:layout_marginTop="200dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="30dp"
                 android:orientation="vertical">
@@ -55,11 +55,9 @@
                     android:id="@+id/textView13"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#400A0A0A"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="20dp"
+                    android:background="#660A0A0A"
                     android:text="@string/hamahiga1"
-                    android:textAlignment="center"
+                    android:textAlignment="textStart"
                     android:textColor="#F5F3F2"
                     android:textSize="30sp"
                     android:textStyle="bold" />
@@ -68,8 +66,9 @@
                     android:id="@+id/textView14"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#400A0A0A"
+                    android:background="#660A0A0A"
                     android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
                     android:text="@string/hamahiga1.text"
                     android:textColor="#F7F6F6"
                     android:textSize="18sp"
@@ -79,7 +78,7 @@
                     android:id="@+id/fragment6"
                     android:name="com.google.android.youtube.player.YouTubePlayerFragment"
                     android:layout_width="match_parent"
-                    android:layout_height="208dp"
+                    android:layout_height="400dp"
 
                     />
 
@@ -87,13 +86,14 @@
                     android:id="@+id/button6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/black"
+                    android:background="#00000000"
                     android:onClick="button6_onClick"
                     android:text="@string/hamahiga1_address"
-                    android:textColor="@color/white"
-                    android:textSize="15sp"
+                    android:textColor="#FFEB3B"
+                    android:textSize="18sp"
                     app:iconTint="#E43131"
                     app:rippleColor="#00FFFFFF" />
+
             </LinearLayout>
 
             <!--2 hamahiga2-->
@@ -110,9 +110,9 @@
                     android:id="@+id/textView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#406B4242"
+                    android:background="#660A0A0A"
                     android:text="@string/hamahiga2"
-                    android:textAlignment="center"
+                    android:textAlignment="textStart"
                     android:textColor="#F5F3F2"
                     android:textSize="30sp"
                     android:textStyle="bold" />
@@ -121,7 +121,9 @@
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#400A0A0A"
+                    android:background="#660A0A0A"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
                     android:text="@string/hamahiga2.text"
                     android:textColor="#F7F6F6"
                     android:textSize="18sp"
@@ -132,7 +134,7 @@
                     android:id="@+id/fragment1"
                     android:name="com.google.android.youtube.player.YouTubePlayerFragment"
                     android:layout_width="match_parent"
-                    android:layout_height="208dp"
+                    android:layout_height="400dp"
 
                     />
 
@@ -140,12 +142,12 @@
                     android:id="@+id/button1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/black"
+                    android:background="#00000000"
                     android:backgroundTint="@color/black"
                     android:onClick="button1_onClick"
                     android:text="@string/hamahiga2_address"
-                    android:textColor="@color/white"
-                    android:textSize="15sp" />
+                    android:textColor="#FFEB3B"
+                    android:textSize="18sp" />
 
                 <!--                <fragment-->
                 <!--                    android:id="@+id/map1"-->
@@ -175,11 +177,9 @@
                     android:id="@+id/textView3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#400A0A0A"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="20dp"
+                    android:background="#660A0A0A"
                     android:text="@string/yabuchi"
-                    android:textAlignment="center"
+                    android:textAlignment="textStart"
                     android:textColor="#F5F3F2"
                     android:textSize="30sp"
                     android:textStyle="bold" />
@@ -188,8 +188,9 @@
                     android:id="@+id/textView4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#400A0A0A"
+                    android:background="#660A0A0A"
                     android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
                     android:text="@string/yabuchi.text"
                     android:textColor="#F7F6F6"
                     android:textSize="18sp"
@@ -199,7 +200,7 @@
                     android:id="@+id/fragment2"
                     android:name="com.google.android.youtube.player.YouTubePlayerFragment"
                     android:layout_width="match_parent"
-                    android:layout_height="208dp"
+                    android:layout_height="400dp"
 
                     />
 
@@ -207,11 +208,11 @@
                     android:id="@+id/button2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/black"
+                    android:background="#00000000"
                     android:onClick="button2_onClick"
                     android:text="@string/yabuchi_address"
-                    android:textColor="@color/white"
-                    android:textSize="15sp" />
+                    android:textColor="#FFEB3B"
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <!--            <fragment-->
@@ -239,9 +240,9 @@
                     android:id="@+id/textView5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#400A0A0A"
+                    android:background="#660A0A0A"
                     android:text="@string/uku"
-                    android:textAlignment="center"
+                    android:textAlignment="textStart"
                     android:textColor="#F5F3F2"
                     android:textSize="30sp"
                     android:textStyle="bold" />
@@ -250,8 +251,9 @@
                     android:id="@+id/textView6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#400A0A0A"
+                    android:background="#660A0A0A"
                     android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
                     android:text="@string/uku.text"
                     android:textColor="#F7F6F6"
                     android:textSize="18sp"
@@ -261,7 +263,7 @@
                     android:id="@+id/fragment3"
                     android:name="com.google.android.youtube.player.YouTubePlayerFragment"
                     android:layout_width="match_parent"
-                    android:layout_height="208dp"
+                    android:layout_height="400dp"
 
                     />
 
@@ -269,11 +271,11 @@
                     android:id="@+id/button3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/black"
+                    android:background="#00000000"
                     android:onClick="button3_onClick"
                     android:text="@string/uku_address"
-                    android:textColor="@color/white"
-                    android:textSize="15sp" />
+                    android:textColor="#FFEB3B"
+                    android:textSize="18sp" />
 
             </LinearLayout>
 
@@ -302,11 +304,9 @@
                     android:id="@+id/textView7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#400A0A0A"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="20dp"
+                    android:background="#660A0A0A"
                     android:text="@string/akuna"
-                    android:textAlignment="center"
+                    android:textAlignment="textStart"
                     android:textColor="#F5F3F2"
                     android:textSize="30sp"
                     android:textStyle="bold" />
@@ -315,8 +315,9 @@
                     android:id="@+id/textView8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#400A0A0A"
+                    android:background="#660A0A0A"
                     android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
                     android:text="@string/akuna.text"
                     android:textColor="#F7F6F6"
                     android:textSize="18sp"
@@ -326,7 +327,7 @@
                     android:id="@+id/fragment4"
                     android:name="com.google.android.youtube.player.YouTubePlayerFragment"
                     android:layout_width="match_parent"
-                    android:layout_height="208dp"
+                    android:layout_height="400dp"
 
                     />
 
@@ -334,10 +335,10 @@
                     android:id="@+id/button4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/black"
+                    android:background="#00000000"
                     android:onClick="button4_onClick"
                     android:text="@string/akuna_address"
-                    android:textColor="@color/white"
+                    android:textColor="#FFEB3B"
                     android:textSize="15sp"
                     app:iconTint="#E43131"
                     app:rippleColor="#00FFFFFF" />
@@ -369,11 +370,9 @@
                     android:id="@+id/textView9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#400A0A0A"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="20dp"
+                    android:background="#660A0A0A"
                     android:text="@string/w.b"
-                    android:textAlignment="center"
+                    android:textAlignment="textStart"
                     android:textColor="#F5F3F2"
                     android:textSize="30sp"
                     android:textStyle="bold" />
@@ -382,8 +381,9 @@
                     android:id="@+id/textView10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#400A0A0A"
+                    android:background="#660A0A0A"
                     android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
                     android:text="@string/w.b.text"
                     android:textColor="#F7F6F6"
                     android:textSize="18sp"
@@ -393,7 +393,7 @@
                     android:id="@+id/fragment5"
                     android:name="com.google.android.youtube.player.YouTubePlayerFragment"
                     android:layout_width="match_parent"
-                    android:layout_height="208dp"
+                    android:layout_height="400dp"
 
                     />
 
@@ -401,11 +401,11 @@
                     android:id="@+id/button5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/black"
+                    android:background="#00000000"
                     android:onClick="button5_onClick"
                     android:text="@string/w_b_address"
-                    android:textColor="@color/white"
-                    android:textSize="15sp"
+                    android:textColor="#FFEB3B"
+                    android:textSize="18sp"
                     app:iconTint="#E43131"
                     app:rippleColor="#00FFFFFF" />
 
@@ -419,7 +419,7 @@
                 android:text="@string/footer"
                 android:textAlignment="center"
                 android:textColor="#FF9800"
-                android:textSize="30sp"
+                android:textSize="36sp"
                 android:textStyle="bold" />
 
             <!--            <fragment-->
