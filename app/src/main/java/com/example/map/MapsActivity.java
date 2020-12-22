@@ -139,7 +139,7 @@ public class MapsActivity extends FragmentActivity {
                             }
                         }
                 );
-        Log.i("log", "Main_onCreate_video1");
+        Log.i("log", "Main_onCreate_video2");
         //video2 ここまで
 
 
@@ -205,7 +205,7 @@ public class MapsActivity extends FragmentActivity {
                             }
                         }
                 );
-        Log.i("log", "Main_onCreate_video2");
+        Log.i("log", "Main_onCreate_video3");
         //video3 ここまで
 
 
@@ -272,7 +272,7 @@ public class MapsActivity extends FragmentActivity {
                             }
                         }
                 );
-        Log.i("log", "Main_onCreate_video3");
+        Log.i("log", "Main_onCreate_video4");
         //video4 ここまで
 
 
@@ -338,7 +338,7 @@ public class MapsActivity extends FragmentActivity {
                             }
                         }
                 );
-        Log.i("log", "Main_onCreate_video4");
+        Log.i("log", "Main_onCreate_video5");
         //video5 ここまで
 
         /**
@@ -403,7 +403,7 @@ public class MapsActivity extends FragmentActivity {
                             }
                         }
                 );
-        Log.i("log", "Main_onCreate_video5");
+        Log.i("log", "Main_onCreate_video6");
         //video6 ここまで
 
         /**
