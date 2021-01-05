@@ -17,11 +17,11 @@
     <string name="akuna">アクナ浜</string>
     <string name="akuna.text">ウクの浜の隣にあるビーチ\n海外からのゴミが漂着してくる</string>
 
-    <string name="hamahiga1_address">〒904-2315 沖縄県うるま市勝連浜</string>
-    <string name="hamahiga2_address">〒904-2316 沖縄県うるま市勝連比嘉２０２</string>
-    <string name="yabuchi_address">〒904-2304 沖縄県うるま市与那城屋慶名</string>
-    <string name="uku_address">〒904-2423 沖縄県うるま市与那城宮城</string>
-    <string name="akuna_address">〒904-2423 沖縄県うるま市与那城宮城</string>
-    <string name="w_b_address">〒904-2312 沖縄県うるま市勝連平安名</string>
+    <string name="hamahiga1_address">MAP 沖縄県うるま市勝連浜</string>
+    <string name="hamahiga2_address">MAP 沖縄県うるま市勝連比嘉２０２</string>
+    <string name="yabuchi_address">MAP 沖縄県うるま市与那城屋慶名</string>
+    <string name="uku_address">MAP 沖縄県うるま市与那城宮城</string>
+    <string name="akuna_address">MAP 沖縄県うるま市与那城宮城</string>
+    <string name="w_b_address">MAP 沖縄県うるま市勝連平安名</string>
 
 </resources>
