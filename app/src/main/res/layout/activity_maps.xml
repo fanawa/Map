@@ -89,6 +89,7 @@
                     android:background="#00000000"
                     android:onClick="button6_onClick"
                     android:text="@string/hamahiga1_address"
+                    android:textAllCaps="false"
                     android:textColor="#FFEB3B"
                     android:textSize="15sp"
                     app:iconTint="#E43131"
@@ -146,6 +147,7 @@
                     android:backgroundTint="@color/black"
                     android:onClick="button1_onClick"
                     android:text="@string/hamahiga2_address"
+                    android:textAllCaps="false"
                     android:textColor="#FFEB3B"
                     android:textSize="15sp" />
 
@@ -211,6 +213,7 @@
                     android:background="#00000000"
                     android:onClick="button2_onClick"
                     android:text="@string/yabuchi_address"
+                    android:textAllCaps="false"
                     android:textColor="#FFEB3B"
                     android:textSize="15sp" />
             </LinearLayout>
@@ -274,6 +277,7 @@
                     android:background="#00000000"
                     android:onClick="button3_onClick"
                     android:text="@string/uku_address"
+                    android:textAllCaps="false"
                     android:textColor="#FFEB3B"
                     android:textSize="15sp" />
 
@@ -338,6 +342,7 @@
                     android:background="#00000000"
                     android:onClick="button4_onClick"
                     android:text="@string/akuna_address"
+                    android:textAllCaps="false"
                     android:textColor="#FFEB3B"
                     android:textSize="15sp"
                     app:iconTint="#E43131"
@@ -404,6 +409,7 @@
                     android:background="#00000000"
                     android:onClick="button5_onClick"
                     android:text="@string/w_b_address"
+                    android:textAllCaps="false"
                     android:textColor="#FFEB3B"
                     android:textSize="15sp"
                     app:iconTint="#E43131"
